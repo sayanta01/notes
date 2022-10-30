@@ -4,3 +4,4 @@ dirs -v                                       - see what saved
 cd ~2                                         - popdirectory
 popd                                          - go back to saved dir stack
  
+
