@@ -1,0 +1,31 @@
+Docker is a Company who Provides Containerization
+docker server runs on linux virtual machine
+sirf website ko host krne jitni resources extract krta h, does not create full os
+
+( dockerfile )   is a blueprint for building docker image
+( docker image ) is a template for running docker container, contains filesystem snapshot + startup command
+( container )    is just a running process
+
+( namespacing ) - isolation of resources means divides resources of machine
+( control groups ) - limit resources per process
+
+docker run = docker create + docker start
+sudo docker create hello-world    - gives hash string, does create container 
+sudo docker start -a "hash string"    - start container, "-a" attach to the container and give output of container
+
+
+( Commands )
+sudo docker run ubuntu ls    - overwrite statup command
+sudo docker ps -a    - list of all running containers
+sudo docker images    - check docker images
+sudo docker stop "Container id"   - stop the container politely, gives SIGTERM signal "Terminate" to process
+sudo docker kill "Container id"   - kill the container, gives SIGKILL signal "Forced Termination" to process
+sudo docker logs "Container id"    - peek in the container 
+sudo docker exec -it "Container id" sh    - run another command in container 
+ 
+
+- How Docker Works -
+( NameSpace )
+
+
+
