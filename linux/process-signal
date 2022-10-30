@@ -7,9 +7,7 @@ pstree "uid"       - processes run by the user
 pstree -p "uid"    -p gives process id also
 2* "process"       - means same process 2 times
 
-
 tty (teletypewriter)    - print name of the terminal you'r using 
-
 
 ps -A or -e     - print all process running in the system
 ps -t 1    -t means terminal and 1 means number 
@@ -17,12 +15,10 @@ ps -u "user"    - processes running by user
 ps -C zsh       - give info regarding the process name
 ps -C zsh -o user,pid,ppid,tty,time,cmd,stat    - show my choosen parameters of process
 
-
 sleep 9999 &     - start bg process
 jobs    - show jobs
 fg %"job-num"    - grep job number enter, bring bg process to fg process 
 bg %"job-num"    - send foreground process to background 
-
 
 SIGTERM (15)    - terminate
 kill -SIGTERM "pid"
@@ -46,7 +42,6 @@ kill -SIGTSTP "pid"
 
 find / -name "file" 1> /dev/null 2> /dev/null    - for continue the process
 kill -SIGCONT (18) "jobID" ex.. %1
-
 
 nohup "command-name" "pid"    - (No Hang Up) run process even after closing terminal in which that command was ran "prevents the processes to receive SIGHUP signal" 
 

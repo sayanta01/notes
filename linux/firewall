@@ -1,4 +1,4 @@
-########## UFW ##########
+#### UFW ####
 
 # /etc/default/ufw    - config
 sudo ufw status

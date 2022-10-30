@@ -1,6 +1,4 @@
-Learn commands ()
-
-(What is hexdump)
+What is hexdump ?
 #hexdump is a hexadecimal view (on screen or paper) of computer data.
 #hexdump of data is usually done in the context of either debugging or reverse engineering. 
 #in a hexdump, each byte (8 bits) is represented as a two-digit hexadecimal number. 
@@ -8,28 +6,22 @@ Learn commands ()
 #some hex dumps have the hexadecimal memory address at the beginning. 
 
 (Command Works)
-file                     check file type
-sort                   sort alphabetically 
-uniq -c              show uniq (-c) means count
-strings              show output of file
-base64 data.txt         encode base64
-base64 -d data.txt     decode base64
-
+file                  - check file type
+sort                  - sort alphabetically 
+uniq -c               - show uniq (-c) means count
+strings               - show output of file
+base64 data.txt       - encode base64
+base64 -d data.txt    - decode base64
 
 (File Compression)
-xxd -r data.txt      reverse hexdump
-gzip -d                  decompress gzip (gz extension)
-bzip2 -d                decompress bzip2 (bz2 extension)
-tar xf                     decompress tar (tar extension)
+xxd -r data.txt       - reverse hexdump
+gzip -d               - decompress gzip (gz extension)
+bzip2 -d              - decompress bzip2 (bz2 extension)
+tar xf                - decompress tar (tar extension)
 
-
-cat ./-                to show - file content 
-file ./*               show human read 
-string ./*           show human readable
-2>/dev/null      remove errors
-
-
-
-
+cat ./-               - to show - file content 
+file ./*              - show human read 
+string ./*            - show human readable
+2>/dev/null           - remove errors
 
 

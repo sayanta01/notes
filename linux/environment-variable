@@ -8,7 +8,7 @@ what is - location of storing a value
 
 env    # display all the evironment variables --use grep to sort
 set    # split things up based on numbers
-set $(ifconfig | grep inet | head -n 1)  --run echo $nm
+set $(ifconfig | grep inet | head -n 1)    - run echo $nm
 declare  
 printenv    # like echo $env
 

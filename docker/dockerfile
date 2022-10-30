@@ -1,8 +1,8 @@
 # Dockerfile    - contains all the info for running your software in a base container
+
 # Dockerfile to Image 
-# Dockerfile  ->>  Docker Clinet  ->>  Docker Server  ->>  Usable Image
-#     |                  |                   |                      
-# plain text        doker comp             Daemon       
+# Dockerfile  >  Docker Clinet  >  Docker Server  >  Usable Image
+# plain text          doker comp          Daemon       
 
 # 1. choose a base image
 # 2. run commands for software

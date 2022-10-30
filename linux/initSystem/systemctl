@@ -8,6 +8,5 @@ systemctl disable apache2.service    -will not run on boot
 systemctl is-enabled apache2         -only want to see whether or not a unit is enabled or disabled 
 systemctl list-unit-files --type=service    -services info  
 
-
 journalctl -u apache2       -check a specific service logs      
 journalctl -u apache2 -f    -show updated info

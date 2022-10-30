@@ -5,3 +5,4 @@ sayanta="bot"        -make variable
 echo $sayanta        -run variable 
 unset ipadd          -remove environment variable
 
+

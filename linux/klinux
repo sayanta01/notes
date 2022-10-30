@@ -2,7 +2,6 @@
 
 mv background.png ../sayanta.png              # move & rename 
 
- 
 ( Tr Cmd )
 # tr Works on Characters
 cat data.txt | tr a-z A-Z                               # pipe out on capital letter
@@ -14,7 +13,6 @@ echo saayanta | tr -s "a"                               # squeeze remove repeate
 head 2 /dev/urandom | tr -cd [:print:]                  # delete everything except printable characters
 echo sayanta1629 | tr -cd [:digit:]                     # del everything except num
 
-
 ( Sudo Cmd )
 /etc/sudoers                                            # sudoers file
 group sudo                                              # check user is sudoer  or not 
@@ -25,7 +23,6 @@ sudo !!                                                 # use this if foget sudo
 newbot    ALL=(ALL:ALL) /usr/bin/apt,/usr/bin/ls        # restrict command for user
 new bot    ALL=(ALL:ALL) NOPASSWD                       # don't ask pswd for commands
 #if anything went wrong in "sudo visudo" file, use x for undo, e for re-edit the file and never user q bcus it's saves invalid changes
-
 
 ( Find Cmd )
 find .                                                  # current dir
@@ -50,10 +47,8 @@ find ~/ -type f -name ".*" -maxdepth 1                  # find hidden files
 find / -type f  -mmin -20 (ago, +20 after)  -mtime -20 (days, +20 after)  -atime -20 (access time days) 
 find . -type d -empty -delete                           # recusively remove all empty directories
 
-
 ( Locate Cmd )
 locate -i ~/ bspwmrc            # locate file with ignorecase
-
 
 ( Permissions )
 chmod u=rwx,g=rx,o=r file.sh    # give permissons linewise
@@ -64,7 +59,6 @@ chown root file.sh              # change file owner, only that owner will access
 suid (octal value) 4            # special user id
 sgid (octal value) 2            # special group id
 sticky bit (octal value) 1
-
 
 ( GREP Cmd )
 grep -w                         # exact word
@@ -89,7 +83,6 @@ grep bot /etc/passwd /etc/group    # search in multiple files
 egrep 'root|bot|daemon' /etc/passwd
 grep -E 'root|bot|daemon' /etc/passwd    # grep -E equivalent of EGREP
 
-
 ( Control Operators )
 ;                  # seperate several cmds, use more than one cmd at a time
 &                  # puts command in background and run other commands
@@ -100,23 +93,18 @@ echo $?            # show command fail or sucess, if output is 0 means previous 
 #                  --system don't read pound symbol
 # \                  # line splitter
 
-
 ( Shortcuts )
 !599  (!num)      # search with num in history command
 !find  (!cmd)     # run previous find command
 
-
 ( Sed )
 sed -n '20,30p'    # print line 20 to 30
  
-
 ( Hostname )
 hostname -i       # ip address
 
-
 ( OS release )
 cat /etc/os-release
-
 
 ( Regular Expression )
 
