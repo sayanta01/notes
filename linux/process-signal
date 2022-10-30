@@ -2,23 +2,23 @@ control the process: kill, stop, resume
 kill -l    - list all signals 
 
 pstree -s "pid"    - see tree of pid
-pstree    - print all the process running in the system not specific to user
-pstree "uid"    - processes run by the user
+pstree             - print all the process running in the system not specific to user
+pstree "uid"       - processes run by the user
 pstree -p "uid"    -p gives process id also
-2* "process"    - means same process 2 times
+2* "process"       - means same process 2 times
 
 
-tty (teletypewriter)   - print name of the terminal you'r using 
+tty (teletypewriter)    - print name of the terminal you'r using 
 
 
-ps -A or -e    - print all process running in the system
+ps -A or -e     - print all process running in the system
 ps -t 1    -t means terminal and 1 means number 
 ps -u "user"    - processes running by user
-ps -C zsh    - give info regarding the process name
+ps -C zsh       - give info regarding the process name
 ps -C zsh -o user,pid,ppid,tty,time,cmd,stat    - show my choosen parameters of process
 
 
-sleep 9999 &    - start bg process
+sleep 9999 &     - start bg process
 jobs    - show jobs
 fg %"job-num"    - grep job number enter, bring bg process to fg process 
 bg %"job-num"    - send foreground process to background 
@@ -40,7 +40,7 @@ SIGTSTP (terminal stop) works on Ctrl+Z suspend the process
 incase SIGTSTP didn't work you can use SIGSTOP
 
 sleep 999 &    - for background process     
-jobs    - see background process
+jobs           - see background process
 ps -C sleep    - select by command name
 kill -SIGTSTP "pid"
 
@@ -52,7 +52,5 @@ nohup "command-name" "pid"    - (No Hang Up) run process even after closing term
 
 pkill -SIGTERM "pid"    - kill process based on process name
 pkill -x kitty          - kill process by name      
-
-
 
 
