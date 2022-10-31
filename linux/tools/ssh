@@ -1,6 +1,6 @@
 sudo ufw allow ssh  
 
-ssh-keygen -b 4096  - 4096 bit size, stronger than default
+ssh-keygen -b 4096    - 4096 bit size, stronger than default
 ssh-copy-id usr@ip
 
 /etc/ssh/sshd_config  - uncmnt "PassworAuthentication no"  - to remove pswd PswdAuthentication  

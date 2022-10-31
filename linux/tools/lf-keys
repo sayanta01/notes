@@ -1,9 +1,9 @@
-ctrl + d     - move faster down
-ctrl + u     - move faster up
+ctrl + d   - move faster down
+ctrl + u   - move faster up
 
 select and unselect with space
-v            - invert the selection
-u            - unselect all
+v          - invert the selection
+u          - unselect all
 
-s            - view all sorting shortcuts
-z            - other commands
+s          - view all sorting shortcuts
+z          - other commands
