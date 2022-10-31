@@ -1,0 +1,12 @@
+“PGP” “Pretty Good Privacy”; “GPG” “Gnu Privacy Guard.”
+it was the original freeware copyrighted program, GPG is the re-write of PGP.
+PGP uses the RSA algorithm and the IDEA encryption algorithm.
+GPG uses the NIST AES, Advanced Encryption Standard.
+
+you make Public_key or Private_key
+you give out "Public_key" to people who want to send you message and they "Encrypt" the message with your Public_key 
+and when you get that message you "Decrypt" the message using your "Private_key"
+
+sudo gpg --full-gen-key  - generate key pairs
+gpg -r email -e "file"   -r means recipient  - Encrypt
+gpg -d "file"            - Decrypt  
