@@ -13,3 +13,4 @@ id                                             - check user id
 use \ run commands thats have alias            - \vim #ihave nvim as nvim in alias
 sudoedit /etc/hosts                            - edit root files with nvim config
 
+
