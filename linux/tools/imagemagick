@@ -1,4 +1,4 @@
-convert ima.jpg -resize 1024X768 output.jpg     - change resolution
+convert img.jpg -resize 1024X768 output.jpg     - change resolution
 convert img.jpg -quality 80 output.jpg          - reduce size 
 convert img.jpg out.pdf                         - convert image to a pdf
 montage -geometry +2+2 img.jpg img.jpg out.jpg  - create a collage
