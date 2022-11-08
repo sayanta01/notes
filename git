@@ -4,12 +4,12 @@ why use git  - maintaining the history of project
 git remote add origin https://github.com/sayanta01/learngit  - add remote 
 git remote -v    - show attached repo
 
-git init      - initialize git  
+git init                 - initialize git  
 git add . or “file.txt”  - stage untracked files  - go to stage to take photo
 git status               - find new file or modified
 git commit -m “message”  - click the picture with message 
 git restore --staged file.txt    - restore staged  - back to stage again
-git log  - see all logs
+git log              - see all logs
 git reset hash code  - unstaged commits  - cp commit hash code where u wanna go   - after this deleted file is in unstaged
 git restore          - file you wanna restore
 
@@ -20,6 +20,7 @@ git stash clear  - idk
 git branch feature    - add new branch called feature
 git checkout          - see in which branch you are
 git checkout feature  - switch to branch 
+git checkout -        - go to previous branch 
 git merge feature     - merge ( run this in main branch )
 git branch -r <branchname>  - delete branch 
 

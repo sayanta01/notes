@@ -5,6 +5,8 @@ cd -                                           - go back
 mkdir -p code/python/tutorial/hellow-world     - parent directory
 mkdir -p linux/{1..99}/{a..z}/{sayanta,singh}
 rm -rf *.mkv                                   - verbose delete
+rm -rf !(<file>)                               - delete all except one
+find . \! -name '<file>' -delete               - del with exception in zsh 
 
 timeout 1(s,m,h) htop                          - run command with time
 id                                             - check user id
