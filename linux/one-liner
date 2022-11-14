@@ -13,6 +13,9 @@ mount -t tmpfs tmpfs /mnt -o size=1024m    # mount a temporary ram partition
 #Sys info
 cat /etc/issue        # display distro 
 cat /proc/version     # info about linux sys
+sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+dd if=/dev/zero of=./largefile bs=1M count=1024    # check write 
+dd if=/dev/zero of=tempfile bs=1M count=1024       # check read
 
 #debian
 sudo dpkg-repack firefox    # put an unpacked .deb package
