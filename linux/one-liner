@@ -16,6 +16,7 @@ cat /proc/version     # info about linux sys
 sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
 dd if=/dev/zero of=./largefile bs=1M count=1024    # check write 
 dd if=/dev/zero of=tempfile bs=1M count=1024       # check read
+sudo dd if=linux-distro.iso of=/dev/sdb bs=1M status=progress    # write iso using dd
 
 #debian
 sudo dpkg-repack firefox    # put an unpacked .deb package
