@@ -1,5 +1,3 @@
-#!/bin/sh
-
 mv background.png ../sayanta.png              # move & rename 
 
 ( Tr Cmd )

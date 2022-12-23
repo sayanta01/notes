@@ -1,5 +1,3 @@
-#!/bin/sh
-
 while true; do echo -ne "$(date)"; sleep 1; done
 echo "!!" > <filename>     # create a script of last executed command
 fuser -k <filename>        # kills a process that is locking a file        
